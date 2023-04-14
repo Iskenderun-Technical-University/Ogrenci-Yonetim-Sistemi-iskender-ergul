@@ -3,7 +3,9 @@ ob_start();
 session_start();
 include '../netting/baglan.php';
 
-
+$ogrencisor=$db->prepare("SELECT * FROM ogrenci");
+$ogrencisor->execute();
+$ogrencicek=$ogrencisor->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -71,6 +73,7 @@ include '../netting/baglan.php';
               <ul class="nav side-menu">
 
                 <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa </a></li>
+                <li><a href="ogrenciler.php"><i class="fa fa-home"></i> Ogrenciler</a></li>
 
                </ul>
              </li>
