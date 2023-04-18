@@ -133,6 +133,57 @@ $kontrol = $sil->execute(array(
 }
 
 
+if (isset($_POST['ogrenciekle'])) {
+
+    $uploads_dir = '../../dimg';
+
+    $tmp_name = $_FILES['ogrenci_fotograf']["tmp_name"];
+    $name = $_FILES['ogrenci_fotograf']["name"];
+
+    $benzersizsayi4 = rand(20000, 32000);
+    $refimgyol = substr($uploads_dir, 6) . "/" . $benzersizsayi4 . $name;
+
+    move_uploaded_file($tmp_name, "$uploads_dir/$benzersizsayi4$name");
+
+    $ekle = $db->prepare("INSERT INTO ogrenci SET 
+		
+		ogrenci_fotograf=:fotograf,
+		ogrenci_isim=:isim,
+		ogrenci_soyisim=:soyisim,
+		ogrenci_telefon=:telefon,
+		ogrenci_adres=:adres,
+		ogrenci_cinsiyet=:cinsiyet
+	
+	
+	");
+    $ekle->execute(array(
+		
+        'fotograf' => $refimgyol,
+		'isim' => $_POST['ogrenci_isim'],
+		'soyisim' => $_POST['ogrenci_soyisim'],
+		'telefon' => $_POST['ogrenci_telefon'],
+		'adres' => $_POST['ogrenci_adres'],
+		'cinsiyet' => $_POST['ogrenci_cinsiyet']
+	
+	
+	
+	));
+
+	
+
+    if ($ekle) {
+
+        header("Location:../production/ogrenciler.php?durum=ok");
+
+    } else {
+
+        header("Location:../production/ogrenciler.php?durum=no");
+    }
+
+
+}
+
+
 
 
 
