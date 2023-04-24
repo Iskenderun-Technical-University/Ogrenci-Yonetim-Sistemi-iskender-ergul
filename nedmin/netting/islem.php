@@ -112,6 +112,41 @@ if (isset($_POST['ogrenciduzenle'])) {
 	
 }
 
+if (isset($_POST['ogretmenduzenle'])) {
+
+
+    $ogretmen_id = $_POST['ogretmen_id'];
+	
+	//Tablo güncelleme işlemi kodları...
+	$ogretmenduzenle=$db->prepare("UPDATE ogretmen SET
+		
+		ogretmen_ad=:ad,
+		ogretmen_soyad=:soyad,
+		ogretmen_brans=:brans,
+		ogretmen_maas=:maas
+		WHERE ogretmen_id=$ogretmen_id");
+
+	$update=$ogretmenduzenle->execute(array(
+		
+		'ad' => $_POST['ogretmen_ad'],
+		'soyad' => $_POST['ogretmen_soyad'],
+		'brans' => $_POST['ogretmen_brans'],
+		'maas' => $_POST['ogretmen_maas']
+		));
+
+
+	if ($update) {
+
+		header("Location:../production/ogretmen-duzenle.php?durum=ok");
+
+	} else {
+
+        header("Location:../production/ogretmen-duzenle.php?durum=no");
+
+	}
+	
+}
+
 
 if($_GET['ogrencisil']=='ok') {
 
@@ -128,9 +163,27 @@ $kontrol = $sil->execute(array(
         header('Location:../production/ogrenciler.php?sil=no') ;  
     }
 
-
-
 }
+
+if($_GET['ogretmensil']=='ok') {
+
+	$sil = $db->prepare('DELETE FROM ogretmen  WHERE ogretmen_id=:id');
+	$kontrol = $sil->execute(array(
+		'id' => $_GET['ogretmen_id']
+	));
+	
+		if($kontrol) {
+	
+			header('Location:../production/ogretmenler.php?sil=ok') ;  
+		}else {
+	
+			header('Location:../production/ogretmenler.php?sil=no') ;  
+		}
+	
+	
+	
+	}
+
 
 
 if (isset($_POST['ogrenciekle'])) {
@@ -178,6 +231,44 @@ if (isset($_POST['ogrenciekle'])) {
     } else {
 
         header("Location:../production/ogrenciler.php?durum=no");
+    }
+
+
+}
+
+
+if (isset($_POST['ogretmenekle'])) {
+
+   
+
+    $ekle = $db->prepare("INSERT INTO ogretmen SET 
+		
+		ogretmen_ad=:ad,
+		ogretmen_soyad=:soyad,
+		ogretmen_brans=:brans,
+		ogretmen_maas=:maas
+	
+	");
+    $ekle->execute(array(
+		
+        'ad' => $_POST['ogretmen_ad'],
+		'soyad' => $_POST['ogretmen_soyad'],
+		'brans' => $_POST['ogretmen_brans'],
+		'maas' => $_POST['ogretmen_maas']
+	
+	
+	
+	));
+
+	
+
+    if ($ekle) {
+
+        header("Location:../production/ogretmenler.php?durum=ok");
+
+    } else {
+
+        header("Location:../production/ogretmenler.php?durum=no");
     }
 
 

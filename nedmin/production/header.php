@@ -7,7 +7,12 @@ $ogrencisor=$db->prepare("SELECT * FROM ogrenci");
 $ogrencisor->execute();
 $ogrencicek=$ogrencisor->fetch(PDO::FETCH_ASSOC);
 
+$ogretmensor=$db->prepare("SELECT * FROM ogretmen");
+$ogretmensor->execute();
+$ogretmencek=$ogretmensor->fetch(PDO::FETCH_ASSOC);
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +78,8 @@ $ogrencicek=$ogrencisor->fetch(PDO::FETCH_ASSOC);
               <ul class="nav side-menu">
 
                 <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa </a></li>
-                <li><a href="ogrenciler.php"><i class="fa fa-home"></i> Ogrenciler</a></li>
+                <li><a href="ogrenciler.php"><i class="fa fa-users"></i> Ögrenciler</a></li>
+                <li><a href="ogretmenler.php"><i class="fa fa-user"></i> Ögretmenler</a></li>
 
                </ul>
              </li>
