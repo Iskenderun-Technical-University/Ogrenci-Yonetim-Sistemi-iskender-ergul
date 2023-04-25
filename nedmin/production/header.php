@@ -11,6 +11,11 @@ $ogretmensor=$db->prepare("SELECT * FROM ogretmen");
 $ogretmensor->execute();
 $ogretmencek=$ogretmensor->fetch(PDO::FETCH_ASSOC);
 
+$kurssor=$db->prepare("SELECT * FROM kurslar");
+$kurssor->execute();
+$kurscek=$kurssor->fetch(PDO::FETCH_ASSOC);
+
+
 ?>
 
 
@@ -80,6 +85,8 @@ $ogretmencek=$ogretmensor->fetch(PDO::FETCH_ASSOC);
                 <li><a href="index.php"><i class="fa fa-home"></i> Anasayfa </a></li>
                 <li><a href="ogrenciler.php"><i class="fa fa-users"></i> Ögrenciler</a></li>
                 <li><a href="ogretmenler.php"><i class="fa fa-user"></i> Ögretmenler</a></li>
+                <li><a href="dersler.php"><i class="fa fa-sliders"></i> Dersler</a></li>
+                <li><a href="logout.php"><i class="fa fa-sign-out"></i> Çıkış</a></li>
 
                </ul>
              </li>

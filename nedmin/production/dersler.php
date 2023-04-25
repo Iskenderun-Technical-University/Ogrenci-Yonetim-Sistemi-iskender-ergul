@@ -3,8 +3,8 @@
 include 'header.php'; 
 
 //Belirli veriyi seçme işlemi
-$ogretmensor=$db->prepare("SELECT * FROM ogretmen");
-$ogretmensor->execute();
+$kurssor=$db->prepare("SELECT * FROM kurslar");
+$kurssor->execute();
 
 
 ?>
@@ -20,14 +20,14 @@ $ogretmensor->execute();
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
           <div class="x_title">
-            <h2>Ögretmen Listeleme <small>
+            <h2>Ders Listeleme <small>
 
             </small></h2>
 
             <div class="clearfix"></div>
 
             <div align="right">
-              <a href="ogretmen-ekle.php"><button class="btn btn-success btn-xs"> Ögretmen Ekle</button></a>
+              <a href="ders-ekle.php"><button class="btn btn-success btn-xs"> Ders Ekle</button></a>
 
             </div>
           </div>
@@ -38,10 +38,10 @@ $ogretmensor->execute();
             <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr>
-                  <th>Ogretmen Ad</th>
-                  <th>Ogretmen Soyad</th>
-                  <th>Ogretmen Branş</th>
-                  <th>Ogretmen Maaş</th>
+                  <th>Ders Numarası</th>
+                  <th>Ders Adı</th>
+                  <th>Ders Süresi(Saat)</th>
+                  <th>Ders Açıklama</th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -51,22 +51,24 @@ $ogretmensor->execute();
 
                 <?php 
 
-                while($ogretmencek=$ogretmensor->fetch(PDO::FETCH_ASSOC)) {?>
+                $i = 1;
+
+                while($kurscek=$kurssor->fetch(PDO::FETCH_ASSOC)) {?>
 
 
                 <tr>
-                  <td><?php echo $ogretmencek['ogretmen_ad']?></td>
-                  <td><?php echo $ogretmencek['ogretmen_soyad'] ?></td>
-                  <td><?php echo $ogretmencek['ogretmen_brans'] ?></td>
-                  <td><?php echo $ogretmencek['ogretmen_maas'] ?></td>
+                  <td><?php echo $i ?></td>
+                  <td><?php echo $kurscek['kurs_ad'] ?></td>
+                  <td><?php echo $kurscek['kurs_saat'] ?></td>
+                  <td><?php echo $kurscek['kurs_aciklama'] ?></td>
                  
-                  <td><center><a href="ogretmen-duzenle.php"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
+                  <td><center><a href="ders-duzenle.php"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
                   <td><center><a href="../netting/islem.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>&ogretmensil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                 </tr>
 
 
 
-                <?php  }
+                <?php  $i++;  }
 
                 ?>
 

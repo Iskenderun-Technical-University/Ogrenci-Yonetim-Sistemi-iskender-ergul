@@ -6,6 +6,9 @@ include 'header.php';
 $ogrencisor=$db->prepare("SELECT * FROM ogrenci");
 $ogrencisor->execute();
 
+$ogrencisor=$db->prepare("SELECT * FROM ogrenci");
+$ogrencisor->execute();
+
 
 ?>
 
@@ -31,7 +34,7 @@ $ogrencisor->execute();
             <div class="clearfix"></div>
 
             <div align="right">
-              <a href="ogrenci-ekle.php"><button class="btn btn-success btn-xs"> Yeni Ekle</button></a>
+              <a href="ogrenci-ekle.php"><button class="btn btn-success btn-xs"> Ögrenci Ekle</button></a>
 
             </div>
           </div>
@@ -46,9 +49,7 @@ $ogrencisor->execute();
                   <th>Ogrenci Fotograf</th>
                   <th>Ogrenci İsim</th>
                   <th>Ogrenci Soyisim</th>
-                  <th>Ogrenci Cinsiyet</th>
-                  <th>Ogrenci Telefon</th>
-                  <th>Ogrenci Adres</th>
+                  <
                   <th></th>
                   <th></th>
                 </tr>
