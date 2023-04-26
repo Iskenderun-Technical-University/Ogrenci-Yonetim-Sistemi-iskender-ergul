@@ -3,6 +3,10 @@
 include 'header.php'; 
 
 
+$ogrencisor = $db->prepare("SELECT * FROM ogrenci WHERE ogrenci_id=:id");
+$ogrencisor->execute(array('id' => $_GET['ogrenci_id']));
+$ogrencicek = $ogrencisor->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 <!-- page content -->
