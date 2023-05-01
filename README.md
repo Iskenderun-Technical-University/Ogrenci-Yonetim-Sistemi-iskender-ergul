@@ -31,7 +31,7 @@ Databasede kullandığım tablolar aşagıdaki gibidir.
 Genel Tablo
 ![database](https://user-images.githubusercontent.com/100355107/235444080-7d05ed8f-e68c-40a1-a4a3-6d6be8b01bb3.png)
 Alt Tablolar
-
+![admin-admin](https://user-images.githubusercontent.com/100355107/235444702-94c2774d-b714-4c6e-b282-88a77f1525d3.png)
 ![database2](https://user-images.githubusercontent.com/100355107/235444117-2eaf338f-0a5f-4816-923d-17b0f05ee118.png)
 ![database3](https://user-images.githubusercontent.com/100355107/235444137-8cd48d59-b9e0-4d99-a6c2-c767dd7e5b65.png)
 ![database4](https://user-images.githubusercontent.com/100355107/235444145-bcd9e84f-e7a5-4a0a-b37b-e979ca0e8b60.png)
