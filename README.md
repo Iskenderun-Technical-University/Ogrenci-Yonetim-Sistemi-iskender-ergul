@@ -26,6 +26,8 @@ Son olarak Çıkış Menüsünden sistemden çıkabilirsiniz.
 
 !!!Programa daha sonradan ögretmen fotograf ekleme bölümü yapılacak!!!
 Databasede kullandığım tablolar aşagıdaki gibidir.
+
+
 Genel Tablo
 ![database](https://user-images.githubusercontent.com/100355107/235444080-7d05ed8f-e68c-40a1-a4a3-6d6be8b01bb3.png)
 Alt Tablolar
