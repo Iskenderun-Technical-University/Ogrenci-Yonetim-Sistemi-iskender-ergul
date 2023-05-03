@@ -40,42 +40,26 @@ $ogrencicek = $ogrencisor->fetch(PDO::FETCH_ASSOC);
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
-            <br />
-
-            <form action="../netting/islem.php" method="POST" enctype="multipart/form-data"  data-parsley-validate class="form-horizontal form-label-left">
-
-            <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Fotograf<br><span class="required">*</span></label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <?php if (strlen($ogrencicek['ogrenci_fotograf'])>0) {?>
-                        <img width="200"  src="../../<?php echo $ogrencicek['ogrenci_fotograf']; ?>">
-                    <?php } else {?>
-                        <img width="200"  src="../../dimg/logo-yok.png">
-                    <?php } ?>
-                </div>
-            </div>
-
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Resim Seç<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <input type="file" id="first-name"  name="ogrenci_fotograf"  class="form-control col-md-7 col-xs-12">
-                  </div>
-                </div>
-
-                <input type="hidden" name="eski_yol" value="<?php echo $ogrencicek['ogrenci_fotograf']; ?>">
-                <input type="hidden" name="ogrenci_id" value="<?php echo $ogrencicek['ogrenci_id']; ?>">
-
-                <div align="right" class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                  <button type="submit" name="fotoduzenle" class="btn btn-primary">Güncelle</button>
-                </div>
-
-              </form>
-
-           
+            
 
             <!-- / => en kök dizine çık ... ../ bir üst dizine çık -->
-            <form action="../netting/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+            <form action="../netting/islem.php" method="POST" id="demo-form2"  enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+
+
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Resim <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <img width="300" src="../../<?php echo $ogrencicek['ogrenci_fotograf']; ?>">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Resim Seç<span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="file" id="first-name"  name="ogrenci_fotograf"  class="form-control col-md-7 col-xs-12">
+                </div>
+              </div>
 
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ogrenci İsim <span class="required">*</span>
@@ -105,17 +89,23 @@ $ogrencicek = $ogrencisor->fetch(PDO::FETCH_ASSOC);
                   <input type="text" id="first-name" name="ogrenci_adres" value="<?php echo $ogrencicek['ogrenci_adres']; ?>" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
               </div>
+              
               <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ogrenci Cinsiyet <span class="required">*</span>
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ögrenci Ciniyet<span class="required">*</span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <select name="ogrenci_cinsiyet" ><option value="erkek">Erkek</option><option value="<?php echo $ogrencicek['ogrenci_cinsiyet']; ?>">Kadın</option></select>
-                </div>
+                 <select id="heard" class="form-control" name="ogrenci_cinsiyet" required>
+
+                  <option  <?php echo $ogrencicek['ogrenci_cinsiyet'] ?>>Erkek</option>
+                  <option  <?php echo $ogrencicek['ogrenci_cinsiyet'] ?>>Kadın</option>
+
+
+                </select>
               </div>
             </div>
 
                 <input type="hidden" name="ogrenci_id" value="<?php echo $ogrencicek['ogrenci_id']; ?>" >
-
+                <input type="hidden" name="ogrenci_fotograf" value="<?php echo $ogrencicek['ogrenci_fotograf'] ?>">
 
               <div class="ln_solid"></div>
               <div class="form-group">
