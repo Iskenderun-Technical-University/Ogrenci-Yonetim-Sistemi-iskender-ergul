@@ -8,7 +8,7 @@ Projedeki amacım bir ögrenci yönetim sistemi yapmak.Dershanelerde ve okulda k
 
 
 Öncelikle programa girerken bir yönetim paneline giriş ekranı karşılıyor.
-<br><br>
+
 <br><hr><br>
 ![admin panel giriş ekranı](https://user-images.githubusercontent.com/100355107/235443444-6b52fa77-9ef1-42b3-a24f-fdb8a1755bca.png)
 Yönetim panelinde dogru bilgileri girdiğimizde solda menülerin oldugu bir admin panel karşılıyor.
