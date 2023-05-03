@@ -19,8 +19,9 @@ Yönetim panelinde dogru bilgileri girdiğimizde solda menülerin oldugu bir adm
 Ögrenciler adlı menüden databasede olan ögrencileri listeleyebilir,ögrenci ekle butonundan ögrenci ekleyebilir,düzenle butonundan ögrenciyi düzenleyebilir ve silme butonundan ögrenciyi silebilirsibiz.Yapılan her değişiklik 'ogrenci' adlı databasedeki tabloda da değişir.
 
 <br><hr><br>
-![ögretmen(ekleme-silme-düzenleme)](https://user-images.githubusercontent.com/100355107/235443587-ca687723-2e55-4793-a9eb-0dfd7def0b7a.png)
+
 Ögretmenler adlı menüdende ögrencide oldugu gibi ekleme, düzenleme, ve silme işlemini yapabilirsiniz.Yapılan her değişiklik 'ogretmen' adlı databasedeki tabloda da değişir.
+![ogretmen-ekleme-düzenleme-silme](https://user-images.githubusercontent.com/100355107/236052468-b14f17b6-37e6-43bd-b0f4-4b72a282ec83.png)
 
 <br><hr><br>
 ![ders ekleme-düzenleme-silme](https://user-images.githubusercontent.com/100355107/235443696-5ff796df-269a-4904-b7c8-613ff64aa0da.png)
