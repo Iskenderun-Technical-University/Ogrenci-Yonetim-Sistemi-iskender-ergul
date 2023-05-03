@@ -1,5 +1,5 @@
 # Ogrenci-Yonetim-Sistemi-iskender-ergul
-<p style="color: red;!important "><b>Projeyi yapmamdaki motivasyon database yapısını anlamak , üzerinde çalışmalar yaptıgım dilde  kendimi geliştirmek ve yeni şeyler ögrenmek.Ögrendiğim bilgileri pekiştirmek</b></p>
+<p><b>Projeyi yapmamdaki motivasyon database yapısını anlamak , üzerinde çalışmalar yaptıgım dilde  kendimi geliştirmek ve yeni şeyler ögrenmek.Ögrendiğim bilgileri pekiştirmek</b></p>
 
 Projedeki amacım bir ögrenci yönetim sistemi yapmak.Dershanelerde ve okulda kullanılabilecek bir program.PHP dili ile yazıldı.
 <br><hr><br>
