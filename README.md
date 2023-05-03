@@ -4,7 +4,8 @@
 Projedeki amacım bir ögrenci yönetim sistemi yapmak.Dershanelerde ve okulda kullanılabilecek bir program.PHP dili ile yazıldı.
 <br><hr><br>
 
-![Yönetim Paneli](https://user-images.githubusercontent.com/100355107/235443345-13ff0ca0-becb-48b4-bd30-5b635fae68a8.png)
+![Ekran görüntüsü 2023-05-04 001627](https://user-images.githubusercontent.com/100355107/236051830-fef5e203-fdfd-41cb-8673-b0405935b70b.png)
+
 
 Öncelikle programa girerken bir yönetim paneline giriş ekranı karşılıyor.
 <br><br>
