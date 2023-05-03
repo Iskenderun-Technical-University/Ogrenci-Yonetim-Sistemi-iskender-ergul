@@ -2,7 +2,7 @@
 Projeyi yapmamdaki motivasyon database yapısını anlamak , üzerinde çalışmalar yaptıgım dilde  kendimi geliştirmek ve yeni şeyler ögrenmek.Ögrendiğim bilgileri pekiştirmek
 
 Projedeki amacım bir ögrenci yönetim sistemi yapmak.Dershanelerde ve okulda kullanılabilecek bir program.PHP dili ile yazıldı.
-
+<br><hr style="color:red"><br>
 
 ![Yönetim Paneli](https://user-images.githubusercontent.com/100355107/235443345-13ff0ca0-becb-48b4-bd30-5b635fae68a8.png)
     Öncelikle programa girerken bir yönetim paneline giriş ekranı karşılıyor
