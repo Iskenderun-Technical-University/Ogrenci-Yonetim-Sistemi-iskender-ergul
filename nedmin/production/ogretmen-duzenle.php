@@ -38,7 +38,22 @@ include 'header.php';
           <div class="x_content">
             <br />
              <!-- / => en kök dizine çık ... ../ bir üst dizine çık -->
-            <form action="../netting/islem.php" method="POST" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+            <form action="../netting/islem.php" method="POST" id="demo-form2" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+                
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Resim <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <img width="300" src="../../<?php echo $ogretmencek['ogretmen_fotograf']; ?>">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Resim Seç<span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="file" id="first-name"  name="ogretmen_fotograf"  class="form-control col-md-7 col-xs-12">
+                </div>
+              </div>
 
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Ogretmen Ad<span class="required">*</span>
@@ -75,6 +90,7 @@ include 'header.php';
               
 
                 <input type="hidden" name="ogretmen_id" value="<?php echo $ogretmencek['ogretmen_id']; ?>" >
+                <input type="hidden" name="ogretmen_fotograf" value="<?php echo $ogretmencek['ogretmen_fotograf'] ?>">
 
 
               <div class="ln_solid"></div>

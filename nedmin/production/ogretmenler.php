@@ -39,6 +39,7 @@ $ogretmensor->execute();
               <thead>
                 <tr>
                   <th>Ogretmen Ad</th>
+                  <th>Ogretmen Fotograf</th>
                   <th>Ogretmen Soyad</th>
                   <th>Ogretmen Branş</th>
                   <th>Ogretmen Maaş</th>
@@ -56,6 +57,7 @@ $ogretmensor->execute();
 
                 <tr>
                   <td><?php echo $ogretmencek['ogretmen_ad']?></td>
+                  <td><?php echo $ogretmencek['ogretmen_fotograf']?></td>
                   <td><?php echo $ogretmencek['ogretmen_soyad'] ?></td>
                   <td><?php echo $ogretmencek['ogretmen_brans'] ?></td>
                   <td><?php echo $ogretmencek['ogretmen_maas'] ?></td>

@@ -2,7 +2,7 @@
 
 try {
 
-	$db=new PDO("mysql:host=localhost;dbname=ogrencidb;charset=utf8",'root','');
+	$db=new PDO("mysql:host=localhost;dbname=ogrencidatabase;charset=utf8",'root','');
 	//echo "veritabanı bağlantısı başarılı";
 }
 

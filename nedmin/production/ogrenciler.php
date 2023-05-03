@@ -49,7 +49,6 @@ $ogrencisor->execute();
                   <th>Ogrenci Fotograf</th>
                   <th>Ogrenci İsim</th>
                   <th>Ogrenci Soyisim</th>
-                  <
                   <th></th>
                   <th></th>
                 </tr>
