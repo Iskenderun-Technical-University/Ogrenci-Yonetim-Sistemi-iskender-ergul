@@ -32,10 +32,10 @@
         <section class="login_content">
          
 
-          <form action="../netting/islem.php" method="POST">
+          <form action="../netting/admin-islem.php" method="POST">
 
 
-            <h1>Yönetim Paneli </h1>
+            <h1>Yönetim Paneli </h1> 
             
             <div>
               <input type="text" name="admin_isim" class="form-control" placeholder="Kullanıcı Adınız" required="" />

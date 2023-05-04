@@ -62,8 +62,8 @@ $kurssor->execute();
                   <td><?php echo $kurscek['kurs_saat'] ?></td>
                   <td><?php echo $kurscek['kurs_aciklama'] ?></td>
                  
-                  <td><center><a href="ders-duzenle.php"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
-                  <td><center><a href="../netting/islem.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>&ogretmensil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
+                  <td><center><a href="ders-duzenle.php?kurs_id=<?php echo $kurscek['kurs_id']; ?>"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
+                  <td><center><a href="../netting/ders-islem.php?ders_id=<?php echo $kurscek['kurs_id']; ?>&kurssil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                 </tr>
 
 

@@ -38,7 +38,7 @@ include 'header.php';
           <div class="x_content">
             <br />
              <!-- / => en kök dizine çık ... ../ bir üst dizine çık -->
-            <form action="../netting/islem.php" method="POST" id="demo-form2" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+            <form action="../netting/ogretmen-islem.php" method="POST" id="demo-form2" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
                 
             <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Resim <span class="required">*</span>

@@ -70,7 +70,7 @@ $ogrencisor->execute();
                   <td><?php echo $ogrencicek['ogrenci_telefon'] ?></td>
                   <td><?php echo $ogrencicek['ogrenci_adres'] ?></td>
                   <td><center><a href="ogrenci-duzenle.php?ogrenci_id=<?php echo $ogrencicek['ogrenci_id']; ?>"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
-                  <td><center><a href="../netting/islem.php?ogrenci_id=<?php echo $ogrencicek['ogrenci_id']; ?>&ogrencisil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
+                  <td><center><a href="../netting/ogrenci-islem.php?ogrenci_id=<?php echo $ogrencicek['ogrenci_id']; ?>&ogrencisil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                 </tr>
 
 

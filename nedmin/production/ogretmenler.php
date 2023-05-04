@@ -63,7 +63,7 @@ $ogretmensor->execute();
                   <td><?php echo $ogretmencek['ogretmen_maas'] ?></td>
                  
                   <td><center><a href="ogretmen-duzenle.php"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
-                  <td><center><a href="../netting/islem.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>&ogretmensil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
+                  <td><center><a href="../netting/ogretmen-islem.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>&ogretmensil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                 </tr>
 
 
