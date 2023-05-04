@@ -1,33 +1,39 @@
 # Ogrenci-Yonetim-Sistemi-iskender-ergul
-Projeyi yapmamdaki motivasyon database yapısını anlamak , üzerinde çalışmalar yaptıgım dilde  kendimi geliştirmek ve yeni şeyler ögrenmek.Ögrendiğim bilgileri pekiştirmek
+<p><b>Projeyi yapmamdaki motivasyon database yapısını anlamak , üzerinde çalışmalar yaptıgım dilde  kendimi geliştirmek ve yeni şeyler ögrenmek.Ögrendiğim bilgileri pekiştirmek</b></p>
 
 Projedeki amacım bir ögrenci yönetim sistemi yapmak.Dershanelerde ve okulda kullanılabilecek bir program.PHP dili ile yazıldı.
+<br><hr><br>
+
+![Ekran görüntüsü 2023-05-04 001627](https://user-images.githubusercontent.com/100355107/236051830-fef5e203-fdfd-41cb-8673-b0405935b70b.png)
 
 
-![Yönetim Paneli](https://user-images.githubusercontent.com/100355107/235443345-13ff0ca0-becb-48b4-bd30-5b635fae68a8.png)
-    Öncelikle programa girerken bir yönetim paneline giriş ekranı karşılıyor
+Öncelikle programa girerken bir yönetim paneline giriş ekranı karşılıyor.
 
+<br><hr><br>
 ![admin panel giriş ekranı](https://user-images.githubusercontent.com/100355107/235443444-6b52fa77-9ef1-42b3-a24f-fdb8a1755bca.png)
-Yönetim panelinde dogru bilgileri girdiğimizde solda menülerin oldugu bir admin panel karşılıyor
+Yönetim panelinde dogru bilgileri girdiğimizde solda menülerin oldugu bir admin panel karşılıyor.
 
-
+<br><hr><br>
 
 ![ögrenciler(ekleme-silme-düzenleme)](https://user-images.githubusercontent.com/100355107/235443569-dc9cf019-0b94-4776-ad2b-583933702438.png)
 Ögrenciler adlı menüden databasede olan ögrencileri listeleyebilir,ögrenci ekle butonundan ögrenci ekleyebilir,düzenle butonundan ögrenciyi düzenleyebilir ve silme butonundan ögrenciyi silebilirsibiz.Yapılan her değişiklik 'ogrenci' adlı databasedeki tabloda da değişir.
 
-![ögretmen(ekleme-silme-düzenleme)](https://user-images.githubusercontent.com/100355107/235443587-ca687723-2e55-4793-a9eb-0dfd7def0b7a.png)
-Ögretmenler adlı menüdende ögrencide oldugu gibi ekleme, düzenleme, ve silme işlemini yapabilirsiniz.Yapılan her değişiklik 'ogretmen' adlı databasedeki tabloda da değişir.
+<br><hr><br>
 
+Ögretmenler adlı menüdende ögrencide oldugu gibi ekleme, düzenleme, ve silme işlemini yapabilirsiniz.Yapılan her değişiklik 'ogretmen' adlı databasedeki tabloda da değişir.
+![ogretmen-ekleme-düzenleme-silme](https://user-images.githubusercontent.com/100355107/236052468-b14f17b6-37e6-43bd-b0f4-4b72a282ec83.png)
+
+<br><hr><br>
 ![ders ekleme-düzenleme-silme](https://user-images.githubusercontent.com/100355107/235443696-5ff796df-269a-4904-b7c8-613ff64aa0da.png)
 Dersler menüsündende ders ekleyebilir dersi düzenleyebilir ve eklemiş oldugunuz dersi silebilirsiniz.Yapılan her değişiklik 'dersler' adlı databasedeki tabloda da değişir.
 
-
+<br><hr><br>
 Son olarak Çıkış Menüsünden sistemden çıkabilirsiniz.
 
-!!!Programa daha sonradan ögretmen fotograf ekleme bölümü yapılacak!!!
+
 Databasede kullandığım tablolar aşagıdaki gibidir.
 
-
+<br><hr><br>
 Genel Tablo
 ![database](https://user-images.githubusercontent.com/100355107/235444080-7d05ed8f-e68c-40a1-a4a3-6d6be8b01bb3.png)
 Alt Tablolar
