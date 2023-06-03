@@ -7,6 +7,7 @@ $ogretmensor=$db->prepare("SELECT * FROM ogretmen");
 $ogretmensor->execute();
 
 
+
 ?>
 
 
@@ -38,8 +39,8 @@ $ogretmensor->execute();
             <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
               <thead>
                 <tr>
-                  <th>Ogretmen Ad</th>
                   <th>Ogretmen Fotograf</th>
+                  <th>Ogretmen Ad</th>
                   <th>Ogretmen Soyad</th>
                   <th>Ogretmen Branş</th>
                   <th>Ogretmen Maaş</th>
@@ -56,13 +57,13 @@ $ogretmensor->execute();
 
 
                 <tr>
-                  <td><?php echo $ogretmencek['ogretmen_ad']?></td>
                   <td><?php echo $ogretmencek['ogretmen_fotograf']?></td>
+                  <td><?php echo $ogretmencek['ogretmen_ad']?></td>
                   <td><?php echo $ogretmencek['ogretmen_soyad'] ?></td>
                   <td><?php echo $ogretmencek['ogretmen_brans'] ?></td>
                   <td><?php echo $ogretmencek['ogretmen_maas'] ?></td>
                  
-                  <td><center><a href="ogretmen-duzenle.php"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
+                  <td><center><a href="ogretmen-duzenle.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>"><button class="btn btn-primary btn-xs">Düzenle</button></a></center></td>
                   <td><center><a href="../netting/ogretmen-islem.php?ogretmen_id=<?php echo $ogretmencek['ogretmen_id']; ?>&ogretmensil=ok"><button class="btn btn-danger btn-xs">Sil</button></a></center></td>
                 </tr>
 

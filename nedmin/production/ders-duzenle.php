@@ -1,6 +1,11 @@
 <?php 
 
 include 'header.php'; 
+$kurssor=$db->prepare("SELECT * FROM kurslar where kurs_id=:id");
+$kurssor->execute(array(
+  'id' => $_GET['kurs_id']
+));
+$kurscek=$kurssor->fetch(PDO::FETCH_ASSOC);
 
 
 

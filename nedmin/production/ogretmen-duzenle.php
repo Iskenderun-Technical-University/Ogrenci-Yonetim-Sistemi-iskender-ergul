@@ -1,6 +1,11 @@
 <?php 
 
 include 'header.php'; 
+$ogretmensor=$db->prepare("SELECT * FROM ogretmen  where ogretmen_id=:id ");
+$ogretmensor->execute(
+  array('id' => $_GET['ogretmen_id'])
+);
+$ogretmencek = $ogretmensor->fetch(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -36,10 +41,9 @@ include 'header.php';
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
-            <br />
-             <!-- / => en kök dizine çık ... ../ bir üst dizine çık -->
-            <form action="../netting/ogretmen-islem.php" method="POST" id="demo-form2" enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
-                
+            <br/>
+            <form action="../netting/ogretmen-islem.php" method="POST" id="demo-form2"  enctype="multipart/form-data" data-parsley-validate class="form-horizontal form-label-left">
+
             <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Yüklü Resim <span class="required">*</span>
                 </label>
@@ -99,8 +103,18 @@ include 'header.php';
                   <button type="submit" name="ogretmenduzenle" class="btn btn-success">Güncelle</button>
                 </div>
               </div>
+            
+             
+
+                  
 
             </form>
+
+
+
+
+
+
 
 
 

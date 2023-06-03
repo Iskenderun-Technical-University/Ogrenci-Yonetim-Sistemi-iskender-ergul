@@ -49,6 +49,9 @@ $ogrencisor->execute();
                   <th>Ogrenci Fotograf</th>
                   <th>Ogrenci İsim</th>
                   <th>Ogrenci Soyisim</th>
+                  <th>Ogrenci Cinsiyet</th>
+                  <th>Ogrenci Telefon</th>
+                  <th>Ogrenci Adres</th>
                   <th></th>
                   <th></th>
                 </tr>
